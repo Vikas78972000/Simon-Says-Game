@@ -1,178 +1,46 @@
-/* General Reset */
-* {
+*{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
-
-/* Body and Background Animation */
-body {
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(45deg, #ff6ec7, #f7a1ff, #f7b7a3);
-    background-size: 300% 300%;
-    animation: backgroundAnimation 5s ease infinite;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
-/* Keyframes for Background Gradient Animation */
-@keyframes backgroundAnimation {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-/* Card Styling */
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.card {
-    background-color: rgba(255, 255, 255, 0.9);
-    width: 350px;
-    padding: 30px;
-    border-radius: 20px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+body{
     text-align: center;
-    animation: fadeIn 2s ease;
+    
 }
 
-.header h1 {
-    font-size: 2.5em;
-    color: #f28d83;
-    margin-bottom: 20px;
-    animation: textAnimation 2s ease-out;
+.btn{
+    height: 200px;
+    width: 200px;
+    border-radius: 20%;
+    border: 10px solid black;
+    margin: 2rem;
 }
 
-.message p {
-    font-size: 1.2em;
-    color: #444;
-    margin: 10px 0;
-    opacity: 0;
-    animation: textFadeIn 2s ease-out forwards;
+.btn-container{
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }
 
-button {
-    background-color: #f28d83;
-    color: white;
-    padding: 12px 30px;
-    border: none;
-    border-radius: 8px;
-    font-size: 1.1em;
-    cursor: pointer;
-    margin-top: 20px;
-    transition: background-color 0.3s ease;
+.red{
+    background-color:#d95980;
 }
 
-button:hover {
-    background-color: #f25d36;
+.yellow{
+    background-color: #f99b45;
 }
 
-/* Surprise Message */
-.surprise {
-    font-size: 1.2em;
-    color: #f28d83;
-    margin-top: 20px;
-    opacity: 0;
-    animation: fadeInSurprise 1.5s ease-out forwards;
+.purple{
+    background-color: #819ff9;
 }
 
-/* Heart Animation */
-.heart-container {
-    margin-top: 20px;
+.green{
+    background-color: #63aac0;
 }
 
-.heart {
-    width: 60px;
-    height: 60px;
-    background-color: #e84a5f;
-    position: relative;
-    transform: rotate(45deg);
-    animation: heartbeat 1.5s ease-in-out infinite;
-    margin: 0 auto;
-    margin-top: 43px;
+.flash{
+    background-color: white;
 }
 
-.heart::before,
-.heart::after {
-    content: '';
-    width: 60px;
-    height: 60px;
-    background-color: #e84a5f;
-    border-radius: 50%;
-    position: absolute;
-}
-
-.heart::before {
-    top: -30px;
-    left: 0;
-}
-
-.heart::after {
-    left: 30px;
-    top: 0;
-}
-
-/* Heartbeat Animation */
-@keyframes heartbeat {
-    0%, 100% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.2);
-    }
-}
-
-/* Text Animation */
-@keyframes textAnimation {
-    0% {
-        opacity: 0;
-        transform: translateY(-50px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes textFadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-/* Fade-in Effect for Surprise */
-@keyframes fadeInSurprise {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: translateY(-50px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.userflash{
+    background-color: green;
 }
