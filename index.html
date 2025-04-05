@@ -3,36 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday, My Love!</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Simon Says Game</title>
 </head>
 <body>
-    <div class="container">
-        <div class="card">
-            <div class="header">
-                <h1>🎉 Happy Birthday, My Love! 🎉</h1>
-            </div>
-            <div class="message">
-                <p>To the most beautiful soul,</p>
-                <p>May your day be as wonderful as you are!</p>
-                <p>You light up my world in every way. 💖</p>
-            </div>
-            <button id="revealMessage" onclick="revealSurprise()">Click for a Surprise 🎁</button>
-            <div id="surpriseMessage" class="surprise" style="display: none;">
-                <p>You are the love of my life. I can’t wait to spend many more birthdays with you! 💍</p>
-            </div>
-            <div class="heart-container">
-                <div class="heart"></div>
-            </div>
+    <h1>Simon Says Game</h1>
+    <h2>Press any key to start the game</h2>
+    <h3></h3>
+    <div class="btn-container">
+        <div class="line-one">
+            <div class="btn red" type = 'button' id="red">1</div>
+        <div class="btn yellow" type = 'button' id="yellow">2</div>
         </div>
+        
+        <div class="line-two">
+            <div class="btn green" type = 'button' id="green">3</div>
+        <div class="btn purple" type = 'button' id="purple">4</div>
+        </div>
+        
     </div>
-
-    <!-- Background Music -->
-    <audio id="background-music" loop autoplay>
-        <source src="audio.mp3" type="audio/mp3">
-        Your browser does not support the audio element.
-    </audio>
-
-    <script src="script.js"></script>
+    <script src="Simon.js"></script>
 </body>
 </html>
