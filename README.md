@@ -1,1 +1,1 @@
-# birthday-gf
+# Simon Says Game
